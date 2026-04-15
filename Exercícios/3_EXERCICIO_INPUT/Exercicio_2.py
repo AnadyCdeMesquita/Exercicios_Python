@@ -1,0 +1,19 @@
+# Exercício 2: Sistema de Cadastro de Colaborador (Setor de RH)
+# Ao cadastrar um novo funcionário, o RH precisa extrair o primeiro
+# nome para criar um crachá e padronizar o e-mail. Crie um programa que:
+# 1. Peça o nome completo do colaborador.
+# 2. Peça o e-mail pessoal do colaborador.
+# 3. Extraia o primeiro nome (deixe-o com a primeira letra maiúscula).
+# 4. Padronize o e-mail (remova espaços extras e deixe tudo em letras minúsculas).
+# 5. Exiba a mensagem:
+#  "Cadastro concluído: [Primeiro Nome]. E-mail de acesso: [E-mail padronizado]".
+
+nome = input('Digite seu nome completo: ').strip().title()
+nome2 = nome[ :nome.find(' ')]
+
+email = input('Digite seu nome completo: ').strip().lower()
+email.find('@')
+email2 = email[email.find('@'):]
+print(email2)
+
+print(f'Cadastro concluído: {nome2}. E-mail de acesso: {email}')
